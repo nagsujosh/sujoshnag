@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="pic.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Performance</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                <a href="index.html">Sujosh Nag</a>
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+          <span></span>
+          <span></span>
+              </label>
+            </div>
+    
+            <div class="nav-links">
+                <a href="index.html" >Home</a>
+                <a href="https://drive.google.com/file/d/1lZOaDVcsv442-7aQho5veY9v_wuGipgQ/view?usp=sharing" target="_blank">Resume</a>
+                <a href="awards.html">Awards</a>
+                <a href="tabla.html" class="active">Music Performance</a>
+                <a href="mailto:nagsujosh2004@gmail.com" >Contact Me</a>
+                <a href="#social-media" id="sms" onclick="myfunction()">Social Media</a>
+              </div>
+          </div>
+          </div>
+          
+
+          <div class="hero">
+
+            <div class="animation">
+                <div class="navbar">
+                    <a href="index.html"><img src="logo.png" class="logo"></a>
+                </div>
+            </div>
+    
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <div class="spcl-div"><center><iframe width="700" height="400" src="https://www.youtube.com/embed/hriVM_DW3_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></div>
+                    
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <center><iframe src="https://www.facebook.com/plugins/video.php?height=450&href=https%3A%2F%2Fwww.facebook.com%2Fsujosh.nag.9%2Fvideos%2F241139920453588%2F&show_text=false&width=550&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></center>
+                    
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <center><iframe width="700" height="400" src="https://www.youtube.com/embed/4Y1kEfz5hJ0?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                    
+    
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <center><iframe class="num4" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fsujosh.nag.9%2Fvideos%2F218372482730332%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></center>
+                    
+                </div>
+            
+    
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+    
+            <div style="text-align:center">
+                <span3 class="dot" onclick="currentSlide(1)"></span3>
+                <span3 class="dot" onclick="currentSlide(2)"></span3>
+                <span3 class="dot" onclick="currentSlide(3)"></span3>
+                <span3 class="dot" onclick="currentSlide(4)"></span3>
+            </div>
+    
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+    
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+    
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+    
+        </div>
+        <br><br><br>
+        <div id="social-media"class="footer-basic">
+            <footer>
+                <div class="social"><a href="https://www.facebook.com/sujosh.nag.9"target="_blank"><img src="facebook.svg" alt=""></a><a href="https://www.instagram.com/sujoshnag/"target="_blank"><img src="square-instagram.svg"></a><a href="https://www.linkedin.com/in/sujoshnag/"target="_blank"><img src="linkedin.svg" alt=""></a><a href="https://github.com/nagsujosh"target="_blank"><img src="github.svg" alt=""></a><a href="https://drive.google.com/file/d/1lZOaDVcsv442-7aQho5veY9v_wuGipgQ/view?usp=sharing" target="_blank"><img src="cv.png" alt=""></a></div>
+                <p class="copyright">© 2022</p>
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+            if (this.hash !== "") {
+          event.preventDefault();
+            var hash = this.hash;
+              $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        } 
+      });
+    });
+    </script>
+    <script>
+        function myfunction(){
+          if(window.innerWidth<=850){
+                  window.location.reload();
+                  window.scrollTo(0, document.body.scrollHeight);
+                }
+        }
+      </script>
+    
+</body>
+</html>

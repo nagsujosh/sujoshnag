@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="pic.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+  <div class="main">
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <a href="index.html">Sujosh Nag</a>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="https://drive.google.com/file/d/1lZOaDVcsv442-7aQho5veY9v_wuGipgQ/view?usp=sharing" target="_blank">Resume</a>
+          <a href="awards.html">Awards</a>
+          <a href="tabla.html" >Music Performance</a>
+          <a href="mailto:nagsujosh2004@gmail.com" >Contact Me</a>
+          <a href="#social-media" id="sms" onclick="myfunction()">Social Media</a>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="content">
+            <div class="animation">
+                <h3>Who am I?</h3>
+                <h1>I am <span class="intro"></span></h1><br>
+                <button type="button"><a href="mailto:nagsujosh2004@gmail.com"><span>Contact me</span></a></button>
+            </div>
+        </div>
+        <div class="cubepic">
+            <div class="cube">
+                <img src="cube.png">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="social-media"class="footer-basic">
+      <footer>
+          <div class="social"><a href="https://www.facebook.com/sujosh.nag.9"target="_blank"><img src="facebook.svg" alt=""></a><a href="https://www.instagram.com/sujoshnag/"target="_blank"><img src="square-instagram.svg"></a><a href="https://www.linkedin.com/in/sujoshnag/"target="_blank"><img src="linkedin.svg" alt=""></a><a href="https://github.com/nagsujosh"target="_blank"><img src="github.svg" alt=""></a><a href="https://drive.google.com/file/d/1lZOaDVcsv442-7aQho5veY9v_wuGipgQ/view?usp=sharing" target="_blank"><img src="cv.png" alt=""></a></div>
+          <p class="copyright">© 2022</p>
+      </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+<script>
+  function myfunction(){
+    if(window.innerWidth<=850){
+            window.location.reload();
+            window.scrollTo(0, document.body.scrollHeight);
+          }
+  }
+</script>
+
+</body>
+</html>
